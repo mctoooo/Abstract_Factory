@@ -1,3 +1,3 @@
 public interface AbstractProcessor {
-    public String Processor();
+   void PerformOperation();
 }

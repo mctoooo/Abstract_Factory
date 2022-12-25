@@ -1,3 +1,3 @@
 public interface AbstractHdd {
-    public  String  Hdd();
+    void StoreData();
 }

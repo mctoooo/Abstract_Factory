@@ -1,12 +1,11 @@
-public class OldtechComputerFactory implements AbstractFactory{
-    public void ComputerFactory()
-    {
-
-       System.out.println(toString());
-
+public class OldtechComputerFactory implements AbstractFactory {
+    @Override
+    public String Create_Processor() {
+        return new Oldtechprocessor();
     }
+    @Override
+    public String Create_Hdd(){ return new OldtechHdd(); }
+    @Override
+    public String Create_Monitor(){ return new OldtechMonitor(); }
 
-    public String toString() {
-        return "(" + Oldtechprocessor.getProcessor() + "," + OldtechMonitor.getMonitor() + "," + OldtechHdd.getHdd() +")";
-    }
 }

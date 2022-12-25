@@ -1,3 +1,3 @@
 public interface AbstractMonitor {
-    public String  Monitor();
+  public void   DisplayPicture();
 }

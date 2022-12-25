@@ -1,11 +1,6 @@
-public class OldtechHdd implements AbstractHdd{
-    private static String Hdd;
-        public String Hdd() {
-        OldtechHdd.Hdd = ("OldtechHdd_3214");
-        return Hdd;
-    }
-
-    public String getHdd() {
-        return OldtechHdd.Hdd;
+public class OldtechHdd implements AbstractHdd {
+    @Override
+    public void StoreData() {
+        System.out.println("Old_tech Hdd");
     }
 }

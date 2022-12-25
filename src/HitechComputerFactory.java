@@ -1,18 +1,12 @@
 public class HitechComputerFactory implements AbstractFactory {
+    @Override
+    public String Create_Processor() { return new Hitechprocessor(); }
 
-    public void ComputerFactory()
-    {
+    @Override
+    public String Create_Hdd() { return new HitechHdd(); }
 
-        System.out.println(toString());
-
-    }
-
-    public String toString() {
-        return "(" + Hitechprocessor.getProcessor() + "," + HitechMonitor.getMonitor() + "," + HitechHdd.getHdd() +")";
-    }
-    }
-
-
+    @Override
+    public String Create_Monitor() { return new HitechMonitor(); }
 
 }
 
